@@ -1,18 +1,23 @@
 import React from "react";
-import { Navbar, Form, Button, Nav, FormControl } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { ReactComponent as Logo } from "../images/logo.svg";
+
+const navbarStyle = {
+  background: "gray",
+};
 
 const Header = () => {
   return (
-    <Navbar bg="light" variant="light">
-      <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#features">Features</Nav.Link>
-      </Nav>
-      <Form inline>
-        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-primary">Search</Button>
-      </Form>
+    <Navbar style={navbarStyle} variant="light">
+      <Container>
+        <Navbar.Brand href="#home">
+          <Logo style={{ maxWidth: "20rem", maxHeight: "3rem" }} />
+        </Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#projects">My Projects</Nav.Link>
+        </Nav>
+      </Container>
     </Navbar>
   );
 };
