@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { ReactComponent as Logo } from "../images/logo.svg";
 
 const navbarStyle = {
@@ -13,8 +13,20 @@ const Header = () => {
         <Navbar.Brand href="#home">
           <Logo style={{ maxWidth: "20rem", maxHeight: "3rem" }} />
         </Navbar.Brand>
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
+        <Nav className="ml-auto">
+          <Nav.Link
+            href="https://www.linkedin.com/in/madina-dzhetegenova-42298668/"
+            target="_blank"
+          >
+            LinkIn
+          </Nav.Link>
+
+          <Nav.Link
+            href="https://docs.google.com/document/d/1T6JNqwwVGMr_RX-INmRaCEOcOnVxrdk2oZ9Q0fpqFB4/edit?usp=sharing"
+            target="_blank"
+          >
+            Resume
+          </Nav.Link>
           <Nav.Link href="#projects">My Projects</Nav.Link>
         </Nav>
       </Container>
