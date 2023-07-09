@@ -27,7 +27,12 @@ const Header = () => {
           >
             Resume
           </Nav.Link>
-          <Nav.Link href="#projects">My Projects</Nav.Link>
+          <Nav.Link
+            href="https://madina-j.github.io/react-todo/"
+            target="_blank"
+          >
+            My Project
+          </Nav.Link>
         </Nav>
       </Container>
     </Navbar>
